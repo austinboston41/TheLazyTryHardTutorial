@@ -7,7 +7,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -30,7 +29,7 @@ public class MyActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String s = username.getText() + " , " + username.getText();
-                Toast toast = Toast.makeText(MyActivity.this, s,10);
+                Toast toast = Toast.makeText(MyActivity.this, s,Toast.LENGTH_LONG);
                 toast.show();
             }
         });
